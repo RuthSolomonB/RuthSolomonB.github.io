@@ -54,3 +54,107 @@ h2::after { content: ''; display: block; width: 50px; height: 3px; background: v
 .desc { font-size: 0.95rem; color: #636e72; }
 
 footer { text-align: center; padding: 40px; background: var(--primary); color: white; font-size: 0.9rem; }
+
+
+/* Additional Styles for index.css */
+
+.summary-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+.summary-list li {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.detail-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.detail-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.btn-nav {
+    background: var(--accent);
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background: #0773c5;
+}
+
+/* Wide Project List Styling */
+.project-list-wide {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card.wide {
+    width: 100%; /* Force full width */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid var(--accent); /* Accent bar on the left instead of bottom */
+    border-bottom: none; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-card.wide ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #444;
+}
+
+.project-card.wide li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Ensure images don't disrupt the flow if you add them later */
+.project-card.wide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
