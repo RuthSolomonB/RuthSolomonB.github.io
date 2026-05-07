@@ -3,83 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruth Befikadu | Portfolio</title>
+    <title>Ruth Befikadu | Software Engineer</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-
   <body>
-    <header class="hero">
-      <h1>Ruth Befikadu</h1>
-      <p>Software Engineering Student | Full-Stack Developer | ML Enthusiast</p>
-
-      <div class="links">
-        <a href="mailto:ruthsol.work@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/ruthbefik" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/RuthSolomonB" target="_blank">GitHub</a>
+    <header>
+      <nav>
+        <div class="logo">RB<span>.</span></div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Ruth Befikadu</h1>
+        <p>Software Engineer | Full-Stack & Systems Developer</p>
+        <div class="hero-links">
+          <a href="mailto:ruthsol.work@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://github.com/RuthSolomonB" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ruthbefik" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
       </div>
     </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Software Engineering student with experience in full-stack development,
-        machine learning, embedded systems, and scalable software systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <div class="card">
-        <h3>Trimble – Software Engineering Intern</h3>
-        <p>
-          Built full-stack features using React + Laravel and improved
-          production systems.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>BCLC – Data Analyst & Web Developer</h3>
-        <p>
-          Developed SQL pipelines, dashboards, and Vue.js applications in Agile
-          teams.
-        </p>
+    <section id="about" class="container">
+      <h2>Summary of Qualifications</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Development</h3>
+          <p>C/C++, Java, PHP (Laravel), Python, JavaScript (React, Vue.js).</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Data & Backend</h3>
+          <p>SQL (SQLite, PostgreSQL), RESTful APIs, and Data Pipelines.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Systems</h3>
+          <p>Embedded Firmware, IoT, and System-level software design.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>DevOps</h3>
+          <p>Git, CI/CD (Jenkins), Docker, and Linux Environments.</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-
-      <div class="card">
-        <h3>ML Cybersecurity System</h3>
-        <p>87% accuracy hybrid ML model using TensorFlow + XGBoost.</p>
-      </div>
-
-      <div class="card">
-        <h3>Alphabetic App</h3>
-        <p>
-          React Native app with Firebase authentication and real-time database.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>TRU Marketplace</h3>
-        <p>C++ + SQLite system with CRUD operations and sorting algorithms.</p>
+    <section id="experience" class="container bg-light">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="job">
+          <div class="job-header">
+            <h3>Software Engineering Intern</h3>
+            <span>Trimble Construction | 2025</span>
+          </div>
+          <ul>
+            <li>
+              Developed production full-stack features using Laravel (PHP) and
+              React.
+            </li>
+            <li>
+              Built backend APIs and validated data flows through rigorous QA
+              and testing.
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <h3>Data Analyst & Web Dev Co-op</h3>
+            <span>BCLC | 2024 - 2025</span>
+          </div>
+          <ul>
+            <li>
+              Maintained SQL-based workflows and Vue.js components for customer
+              apps.
+            </li>
+            <li>
+              Automated data pipelines using Matillion and supported CI/CD via
+              Jenkins.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <p>
-        C++, Java, Python, JavaScript, React, Vue, React Native, SQL, Firebase,
-        TensorFlow, Git, CI/CD
-      </p>
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>TRU Marketplace</h3>
+          <p>C++, SQLite, SQL</p>
+          <p class="desc">
+            A database-driven marketplace utilizing CRUD operations and custom
+            sorting algorithms for optimized data retrieval.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Remote Health Monitor</h3>
+          <p>Java, MVC, Design Patterns</p>
+          <p class="desc">
+            Event-driven patient monitoring system applying Observer and Adapter
+            patterns for real-time vital sign alerting.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Smart Factory IoT</h3>
+          <p>C++, ARM Mbed, Bluetooth</p>
+          <p class="desc">
+            Embedded firmware for real-time sensor data acquisition and remote
+            environmental control via mobile app.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>VHDL Smart Safe</h3>
+          <p>VHDL, Vivado, FPGA</p>
+          <p class="desc">
+            Hardware-level digital security system with state-machine logic and
+            keypad verification on Basys 3 FPGA.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2026 Ruth Befikadu</p>
+    <footer id="contact">
+      <p>© 2026 Ruth Befikadu | Built with HTML & CSS</p>
     </footer>
   </body>
 </html>
