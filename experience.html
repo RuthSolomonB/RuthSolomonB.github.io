@@ -3,82 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work Experience | Ruth Befikadu</title>
+    <title>Professional Experience | Ruth Befikadu, EIT</title>
+    <meta
+      name="description"
+      content="Comprehensive work history and co-op experience for Ruth Befikadu, EIT."
+    />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="index.html" style="color: white; text-decoration: none"
-          >RB<span>.</span></a
-        >
-      </div>
-      <ul>
-        <li><a href="index.html">← Back to Home</a></li>
-      </ul>
-    </nav>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="nav-container">
+        <a href="index.html" class="logo">RB<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">&larr; Back to Home</a></li>
+          <li><a href="summary.html">Summary</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="container">
-      <h2>Professional Experience Detail</h2>
+    <main class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Career Journey</span>
+          <h2>Professional Work Experience</h2>
+        </div>
+        <a href="index.html" class="detail-link">&larr; Return to Overview</a>
+      </div>
+
+      <!-- Lead Summary -->
+      <p class="hero-intro" style="color: var(--text-muted); margin-bottom: 3rem; text-align: left;">
+        16 months of engineering co-op experience developing production web applications, optimizing enterprise data pipelines, and implementing embedded software across industry and academic research environments.
+      </p>
+
       <div class="timeline">
-        <div class="job">
-          <h3>Software Engineering Intern</h3>
-          <p><strong>Trimble Construction</strong> | May 2025 – August 2025</p>
-          <ul>
-            <li>
-              Developed production full-stack features for Traqspera using
-              Laravel/PHP and React.
-            </li>
-            <li>
-              Implemented backend APIs and validated data flows through rigorous
-              QA and testing processes.
-            </li>
-            <li>
-              Contributed to a production codebase using Git, code reviews, and
-              iterative deployment cycles.
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Data Analyst and Web Developer Co-op</h3>
-          <p><strong>BCLC</strong> | May 2024 – May 2025</p>
-          <ul>
-            <li>
-              Developed and maintained SQL-based data workflows and Vue.js
-              frontend components.
-            </li>
-            <li>
-              Used Jenkins, Matillion, and Bitbucket to support CI/CD and
-              automation workflows.
-            </li>
-            <li>
-              Collaborated in Agile (Scrum) teams to deliver production-grade
-              features.
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Research Assistant</h3>
-          <p>
-            <strong>Thompson Rivers University</strong> | April 2023 – April
-            2024
+        <!-- Role 1: Trimble Construction -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-building"></i> Trimble Construction</span>
+            <span class="job-date">May 2025 &ndash; August 2025</span>
+          </div>
+          <h3 class="job-title">Software Engineering Intern</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered full-stack features and resolved critical runtime defects for field management applications supporting operational construction sites.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Developed a reusable extension for a C-based robotic platform,
-              mapping graphical blocks to C code.
+              Built and delivered production full-stack features using Laravel (PHP) and React, serving active construction platforms with real-world users across multiple job sites.
             </li>
             <li>
-              Applied Kalman Filter (KF) and SLAM algorithms in MATLAB for
-              system modeling.
+              Diagnosed and resolved more than 25 cross-stack defects, stabilizing error handling, reducing system runtime errors, and improving overall user experience.
             </li>
             <li>
-              Authored and presented a research paper as a finalist in the AEAC
-              student competition.
+              Engineered robust backend API endpoints and validated complex data flows through systematic unit testing, integration tests, and QA workflows.
+            </li>
+            <li>
+              Participated in code reviews, staging builds, and iterative sprint cycles within a collaborative Git-based development environment.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>React</span>
+            <span>Laravel (PHP)</span>
+            <span>JavaScript</span>
+            <span>REST APIs</span>
+            <span>Git</span>
+            <span>Software Testing & QA</span>
+            <span>Root-Cause Analysis</span>
+          </div>
+        </div>
+
+        <!-- Role 2: BCLC Web Developer -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-dice"></i> British Columbia Lottery Company (BCLC)</span>
+            <span class="job-date">January 2025 &ndash; May 2025</span>
+          </div>
+          <h3 class="job-title">Web Developer Co-op</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Developed responsive frontend features and UI components for high-traffic, customer-facing digital gaming platforms.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              Engineered responsive frontend UI modules in Vue.js for the PlayNow web application, improving promotional content delivery and user accessibility for millions of visiting customers.
+            </li>
+            <li>
+              Collaborated cross-functionally with UI/UX designers, backend developers, and QA engineers to introduce and iterate on web features.
+            </li>
+            <li>
+              Operated within an Agile (Scrum) cadence, actively contributing to sprint planning, daily stand-ups, and continuous iterative deployments.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>Vue.js</span>
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+            <span>Agile/Scrum</span>
+            <span>Bitbucket</span>
+            <span>UI/UX Collaboration</span>
+          </div>
+        </div>
+
+        <!-- Role 3: BCLC Data Analyst -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-chart-pie"></i> British Columbia Lottery Company (BCLC)</span>
+            <span class="job-date">May 2024 &ndash; January 2025</span>
+          </div>
+          <h3 class="job-title">Data Analyst Co-op</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered enterprise SQL extraction workflows, automated data distribution pipelines, and implemented monitoring dashboards for operational auditing.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              Constructed and maintained SQL workflows processing millions of transaction records to support financial reporting, audit compliance, and operational analytics.
+            </li>
+            <li>
+              Created 2 real-time dashboards utilized by 10&ndash;20 analysts in Lottery and Casino teams for system performance tracking and post-migration data quality monitoring.
+            </li>
+            <li>
+              Automated daily reporting distribution pipelines using Qlik Sense and native Windows scripting, eliminating manual file preparation and distribution overhead.
+            </li>
+            <li>
+              Leveraged Jenkins, Matillion, and Bitbucket to support automated data processing and enterprise CI/CD workflows.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>SQL</span>
+            <span>Data Ingestion</span>
+            <span>Qlik Sense</span>
+            <span>Matillion</span>
+            <span>Jenkins</span>
+            <span>Windows Automation</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+
+        <!-- Role 4: Thompson Rivers University -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-graduation-cap"></i> Thompson Rivers University</span>
+            <span class="job-date">April 2023 &ndash; April 2024</span>
+          </div>
+          <h3 class="job-title">Research Assistant (Robotics & Software)</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Conducted applied research in robotics software abstraction, state estimation algorithms, and educational STEM toolchains.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              Extended a C-based robotic vehicle platform by engineering a reusable mBlock extension mapping visual drag-and-drop programming blocks directly to low-level C firmware.
+            </li>
+            <li>
+              Deployed the robotic platform across TRU engineering department workshops, successfully supporting hands-on STEM education for more than 200 high school and undergraduate students.
+            </li>
+            <li>
+              Implemented and simulated Kalman Filter (KF), Extended Kalman Filter (EKF), and SLAM algorithms in MATLAB to optimize position estimation in noisy sensor environments.
+            </li>
+            <li>
+              Authored and presented a peer-reviewed research paper as a national finalist in the AEAC student paper and presentation competition.
+            </li>
+            <li>
+              Maintained cross-platform software workflows across Linux and Windows environments using GitLab for version control.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>C</span>
+            <span>mBlock</span>
+            <span>MATLAB / Simulink</span>
+            <span>Kalman Filters (KF/EKF)</span>
+            <span>SLAM</span>
+            <span>GitLab</span>
+            <span>Linux</span>
+          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Navigation Footer -->
+      <div style="margin-top: 3.5rem; text-align: center;">
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Main Portfolio</a>
+        <a href="projects.html" class="btn btn-primary" style="margin-left: 1rem;">Browse Full Project Catalog &rarr;</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container footer-content">
+        <h2>Let's Connect</h2>
+        <p class="footer-lead">
+          Open to relocation across Canada for embedded, systems, and full-stack engineering roles.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ruthsol.work@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i> ruthsol.work@gmail.com
+          </a>
+          <a href="tel:2363132044" class="contact-item">
+            <i class="fas fa-phone"></i> 236-313-2044
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ruthbefik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            <i class="fab fa-linkedin"></i> linkedin.com/in/ruthbefik
+          </a>
+          <a
+            href="https://github.com/RuthSolomonB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            <i class="fab fa-github"></i> github.com/RuthSolomonB
+          </a>
+        </div>
+        <p class="copyright">
+          &copy; 2026 Ruth Befikadu, EIT. Built for clean performance and readability.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

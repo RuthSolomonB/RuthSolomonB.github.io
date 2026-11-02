@@ -3,61 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Summary | Ruth Befikadu</title>
+    <title>Technical Qualifications | Ruth Befikadu, EIT</title>
+    <meta
+      name="description"
+      content="Comprehensive technical summary and core qualifications for Ruth Befikadu, EIT."
+    />
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="index.html" style="color: white; text-decoration: none"
-          >RB<span>.</span></a
-        >
-      </div>
-      <ul>
-        <li><a href="index.html">← Back to Home</a></li>
-      </ul>
-    </nav>
-
-    <section class="container">
-      <h2>Detailed Summary of Qualifications</h2>
-      <div class="summary-list">
-        <ul>
-          <li>
-            <strong>Software Development:</strong> Proficient in C/C++, Java,
-            and PHP; expert in OOP and design patterns (MVC, Observer,
-            Singleton, etc. ).
-          </li>
-          <li>
-            <strong>Data Engineering:</strong> Skilled in SQL data workflows
-            (BCLC) and large-scale analysis with Python; experienced with SQLite
-            integration for persistent storage.
-          </li>
-          <li>
-            <strong>AI & Machine Learning:</strong> Developed end-to-end ML
-            pipelines and hybrid models achieving 87% accuracy for multi-class
-            classification.
-          </li>
-          <li>
-            <strong>Web & Full-Stack:</strong> Experienced in building RESTful
-            APIs (Laravel) and frontend components using React, Vue.js, and
-            React Native.
-          </li>
-          <li>
-            <strong>Systems & Firmware:</strong> Hands-on experience with
-            system-level software, embedded firmware (mbed/ARM), and
-            sensor-driven robotics logic.
-          </li>
-          <li>
-            <strong>DevOps & Agile:</strong> Proficient with Git
-            (GitHub/GitLab/Bitbucket), CI/CD pipelines (Jenkins, Docker, yaml),
-            and collaborative Agile Scrum workflows.
-          </li>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="nav-container">
+        <a href="index.html" class="logo">RB<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">&larr; Back to Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Engineering Depth</span>
+          <h2>Comprehensive Technical Qualifications</h2>
+        </div>
+        <a href="index.html" class="detail-link">&larr; Return to Overview</a>
       </div>
-    </section>
-  </body>
-</html>
+
+      <!-- Overview Lead Paragraph -->
+      <p class="hero-intro" style="color: var(--text-muted); margin-bottom: 3rem; text-align: left;">
+        Software Engineering graduate and EIT with 16 months of engineering co-op experience across low-level software, embedded firmware, and production systems. Below is a detailed breakdown of technical competencies, domain specializations, and verified tools applied across production and research environments.
+      </p>
+
+      <!-- Detailed Qualifications Grid -->
+      <div class="timeline">
+        <!-- Domain 1: Embedded Systems & Hardware Interfacing -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-microchip"></i> Domain 01</span>
+            <span class="job-date">Firmware & Hardware Systems</span>
+          </div>
+          <h3 class="job-title">Embedded Systems, Microcontrollers & Digital Logic</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Hands-on experience architecting bare-metal firmware, deterministic hardware-response loops, and digital circuit logic on microcontroller and FPGA platforms.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              <strong>Microcontroller Firmware:</strong> Developed real-time telemetry capture and bidirectional Bluetooth control loops in C++ using ARM mbed LPC1768 and Keil Studio IDE.
+            </li>
+            <li>
+              <strong>Digital Logic & FSM Design:</strong> Synthesized finite state machines (FSMs) in VHDL on Basys 3 FPGAs with Vivado, programming input debouncing and digital timing constraints for fail-safe operation.
+            </li>
+            <li>
+              <strong>Deterministic Actuation:</strong> Interfaced motor drivers and sensor circuits with low-level C firmware on robotic platforms to ensure immediate, zero-latency feedback.
+            </li>
+            <li>
+              <strong>Low-Level Peripheral Drivers:</strong> Wrote custom drivers for onboard hardware timers, LCD displays, and Pmod keypads.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>C/C++</span>
+            <span>VHDL</span>
+            <span>ARM mbed LPC1768</span>
+            <span>Basys 3 FPGA</span>
+            <span>Vivado</span>
+            <span>Embedded Linux</span>
+            <span>Timers & Debouncing</span>
+          </div>
+        </div>
+
+        <!-- Domain 2: Software Engineering & Verification -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-vial-circle-check"></i> Domain 02</span>
+            <span class="job-date">Verification & Architecture</span>
+          </div>
+          <h3 class="job-title">Software Engineering, OOP & Rigorous Testing</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Strong foundation in software design patterns, algorithmic optimization, and systematic automated verification methodologies to produce testable and maintainable codebases.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              <strong>Design Patterns & Architecture:</strong> Applied Observer, Adapter, and decoupled MVC patterns to engineer real-time event-driven telemetry and alert-monitoring systems.
+            </li>
+            <li>
+              <strong>Automated Unit & System Testing:</strong> Structured comprehensive test suites utilizing Google Test (GTest) and CTest, executing boundary value, equivalence class, and branch path testing.
+            </li>
+            <li>
+              <strong>Numerical Simulation & Solvers:</strong> Implemented physical simulation engines modeling non-linear aerodynamic drag and dynamic collision forces using RK4 and Euler solvers.
+            </li>
+            <li>
+              <strong>Root-Cause Analysis & QA:</strong> Diagnosed and resolved 25+ cross-stack defects in enterprise production software, preventing regressions and stabilizing runtime performance.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>Google Test (GTest)</span>
+            <span>CTest</span>
+            <span>CMake</span>
+            <span>OOP / MVC</span>
+            <span>Design Patterns</span>
+            <span>Data Structures & Algorithms</span>
+            <span>Root-Cause Analysis</span>
+          </div>
+        </div>
+
+        <!-- Domain 3: Full-Stack & Production Web Systems -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-layer-group"></i> Domain 03</span>
+            <span class="job-date">Full-Stack Application Development</span>
+          </div>
+          <h3 class="job-title">Web Applications, APIs & User Interfaces</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Delivered end-to-end features for enterprise platforms and high-traffic consumer web applications across modern frontend frameworks and backend runtimes.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              <strong>Production Full-Stack:</strong> Built and delivered features using Laravel (PHP) and React, serving active construction platforms with real-world users across multiple job sites.
+            </li>
+            <li>
+              <strong>Frontend Engineering:</strong> Engineered responsive UI modules in Vue.js for high-volume customer platforms (PlayNow/BCLC) and built modular TypeScript applications with Vite and Tailwind CSS.
+            </li>
+            <li>
+              <strong>RESTful API Architecture:</strong> Designed backend API endpoints, authenticated routing, and payload serialization connecting decoupled frontend clients to relational data stores.
+            </li>
+            <li>
+              <strong>Cross-Platform Mobile:</strong> Developed mobile apps using React Native and Expo Go, leveraging Firebase for authentication and sub-second client-server synchronization.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>React</span>
+            <span>Vue.js</span>
+            <span>Laravel (PHP)</span>
+            <span>TypeScript / JavaScript</span>
+            <span>Node.js / Express</span>
+            <span>React Native</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Domain 4: Data Engineering, Analytics & Robotics Math -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-chart-line"></i> Domain 04</span>
+            <span class="job-date">Data & Mathematical Modeling</span>
+          </div>
+          <h3 class="job-title">Data Pipelines, Databases & State Estimation</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Proven ability to process high-volume datasets, optimize complex SQL workflows, and implement mathematical filters for robotics and noisy sensor environments.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              <strong>SQL & Data Workflows:</strong> Built and maintained SQL workflows processing millions of transactional records to support operational reporting and post-migration data audits.
+            </li>
+            <li>
+              <strong>State Estimation & Localization:</strong> Implemented Kalman Filtering (KF), Extended Kalman Filtering (EKF), and SLAM algorithms in MATLAB for robot localization and sensor noise attenuation.
+            </li>
+            <li>
+              <strong>Database Integration:</strong> Designed database systems using PostgreSQL and SQLite, executing complex

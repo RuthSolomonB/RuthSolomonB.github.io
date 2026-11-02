@@ -3,278 +3,450 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Project Catalog | Ruth Befikadu</title>
+    <title>Complete Project Catalog | Ruth Befikadu, EIT</title>
+    <meta
+      name="description"
+      content="Comprehensive technical project catalog of Ruth Befikadu, EIT — spanning embedded systems, C++ simulation, computer vision, machine learning, and full-stack software."
+    />
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="index.html" style="color: white; text-decoration: none"
-          >RB<span>.</span></a
-        >
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="nav-container">
+        <a href="index.html" class="logo">RB<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">&larr; Back to Home</a></li>
+          <li><a href="summary.html">Summary</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Engineering Portfolio</span>
+          <h2>Complete Technical Project Catalog</h2>
+        </div>
+        <a href="index.html" class="detail-link">&larr; Return to Overview</a>
       </div>
-      <ul>
-        <li><a href="index.html">← Back to Home</a></li>
-      </ul>
-    </nav>
 
-    <section class="container">
-      <h2>Complete Technical Project Catalog</h2>
+      <!-- Lead Summary -->
+      <p class="hero-intro" style="color: var(--text-muted); margin-bottom: 3rem; text-align: left;">
+        A comprehensive showcase of engineering projects across embedded firmware, real-time control, automated software testing (GTest/CI/CD), physical simulation, edge computer vision, and full-stack systems.
+      </p>
 
-      <div class="project-list-wide">
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>ML-Based Cyber Security System</h3>
-            <span class="tech-stack"
-              >Python, TensorFlow, Scikit-Learn, XGBoost, Pandas, NumPy</span
-            >
+      <div class="timeline">
+        <!-- Project 1: Smart Factory -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-microchip"></i> Embedded Systems & IoT</span>
+            <span class="job-date">Arm Keil Studio &bull; mbed LPC1768</span>
           </div>
-          <p class="desc">
-            Designed and optimized a machine learning–based intrusion detection
-            system capable of classifying network traffic into nine attack
-            categories.
+          <h3 class="job-title">Smart Factory Real-Time Environmental Monitor</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered embedded firmware in C++ for an ARM Cortex-M3 microcontroller to capture real-time telemetry from environmental sensors and handle bidirectional remote control.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Designed a hybrid architecture combining a residual neural network
-              with embedding layers and an XGBoost classifier.
+              Programmed microcontroller firmware in C++ to capture, filter, and process real-time telemetry from environmental temperature and humidity sensors.
             </li>
             <li>
-              Achieved 87.21% overall accuracy and a 5× improvement in
-              minority-class recall (e.g., Worms, Shellcode).
+              Implemented low-level drivers to interface with LCD output and onboard hardware timers for precise scheduling, data acquisition, and real-time event loops.
             </li>
             <li>
-              Optimized model efficiency (runtime, memory, and CPU usage) for
-              deployable models in low-power environments.
+              Integrated temperature control mechanisms triggered via an application that dynamically modifies system states over bidirectional wireless Bluetooth communication.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>C++</span>
+            <span>ARM mbed LPC1768</span>
+            <span>Keil Studio IDE</span>
+            <span>Bluetooth Serial</span>
+            <span>Hardware Timers</span>
+            <span>LCD Drivers</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>TRU Marketplace</h3>
-            <span class="tech-stack">C++, SQLite, Visual Studio</span>
+        <!-- Project 2: Programmable Smart Safe -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-shield-halved"></i> Digital Logic & FPGA</span>
+            <span class="job-date">Vivado (Xilinx) &bull; Basys 3 FPGA</span>
           </div>
-          <p class="desc">
-            Developed a database-driven marketplace system utilizing SQLite for
-            persistent data storage and high-performance retrieval.
+          <h3 class="job-title">Programmable Smart Safe</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Designed and synthesized a hardware-level electronic security safe on an FPGA utilizing finite state machine control logic and physical input verification.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Implemented CRUD operations and optimized SQL queries to manage
-              structured item data efficiently.
+              Designed and synthesized a finite state machine (FSM) in VHDL to handle multi-state control logic across idle, open, close, and programming modes.
             </li>
             <li>
-              Applied custom data structures and sorting algorithms to allow for
-              alphabetical or price-based organization.
+              Interfaced peripheral hardware including a Pmod keypad to sample, debounce, and securely verify raw multi-digit PIN inputs in real time.
             </li>
             <li>
-              Designed the system using modular software principles to ensure
-              future scalability and maintainability.
+              Verified digital logic timing constraints, setup/hold tolerances, and hardware integrity using Vivado simulation tools to guarantee robust error handling and fail-safe operation.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>VHDL</span>
+            <span>Basys 3 FPGA</span>
+            <span>Vivado</span>
+            <span>FSM Design</span>
+            <span>Hardware Debouncing</span>
+            <span>Timing Verification</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Automated Remote Health Monitoring System</h3>
-            <span class="tech-stack">Java, IntelliJ, MVC, Design Patterns</span>
+        <!-- Project 3: Projectile Simulation Testing -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-vial-circle-check"></i> Physical Modeling & Verification</span>
+            <span class="job-date">Visual Studio &bull; CMake &bull; GTest</span>
           </div>
-          <p class="desc">
-            Designed an event-driven system simulating continuous patient
-            monitoring using wearable IoT data (heart rate, SpO₂, ECG).
+          <h3 class="job-title">Projectile Physical Simulation & Test Suite Engine</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered a configurable physical simulation engine modeling non-linear aerodynamic forces, verified through comprehensive automated test suites and GitLab CI/CD pipelines.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Applied object-oriented design patterns, including Observer,
-              Adapter, Strategy, and Singleton, for a modular architecture.
+              Engineered a configurable physical simulation engine modeling non-linear aerodynamic drag, varying launch conditions, and numerical integration solvers (RK4, Euler).
             </li>
             <li>
-              Developed real-time monitoring logic with automated alerting
-              mechanisms for abnormal vital sign conditions.
+              Designed an impact-energy analytical model to calculate dynamic collision forces and trajectory outcomes from high-velocity simulation data.
             </li>
             <li>
-              Built a multi-patient dashboard with robust error handling for
-              simulated sensor data streams.
+              Applied comprehensive testing methodologies including boundary value, equivalence class, decision table, path, integration, and system testing within GTest to verify numerical stability and zero runtime faults.
+            </li>
+            <li>
+              Configured and automated a multi-stage GitLab CI/CD pipeline (build, test, doc, deploy) featuring artifact caching across jobs, automated CTest execution, and Doxygen documentation generation deployed directly to GitLab Pages.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>C++</span>
+            <span>CMake</span>
+            <span>Google Test (GTest)</span>
+            <span>CTest</span>
+            <span>GitLab CI/CD</span>
+            <span>Numerical Solvers (RK4)</span>
+            <span>Doxygen</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Programmable Smart Safe</h3>
-            <span class="tech-stack">VHDL, Vivado (Xilinx), Basys 3 FPGA</span>
+        <!-- Project 4: Freenove Robot Car Extension -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-robot"></i> Robotics & Embedded Firmware</span>
+            <span class="job-date">C &bull; mBlock &bull; Circuits</span>
           </div>
-          <p class="desc">
-            Designed and implemented a reprogrammable hardware-level safe to
-            ensure secure storage using FPGA technology.
+          <h3 class="job-title">Freenove Robot Car Software & Firmware Extension</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Developed a reusable graphical software extension and low-level firmware abstraction layer for a C-based robotic vehicle platform deployed in STEM engineering education.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Programmed a Pmode keypad interface that verifies 4-digit PINs for
-              secure access.
+              Developed a reusable mBlock software extension for a C-based robotic car, bridging graphical block programming with low-level C firmware.
             </li>
             <li>
-              Implemented distinct finite state machines (FSM) for idle, open,
-              close, and programmable modes.
+              Implemented block-to-code translation mechanisms allowing graphical commands to map directly to underlying hardware control logic.
             </li>
             <li>
-              Mastered hardware description language (VHDL) to build a complex
-              digital system with robust functionalities.
+              Integrated custom electronics and circuits with platform software to ensure deterministic motor and sensor response.
+            </li>
+            <li>
+              Deployed the tool across TRU engineering department robotics workshops, supporting hands-on STEM education for more than 200 students.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>C</span>
+            <span>mBlock</span>
+            <span>Embedded Firmware</span>
+            <span>Hardware Interfacing</span>
+            <span>Deterministic Control</span>
+            <span>STEM Education</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Smart Factory IoT</h3>
-            <span class="tech-stack"
-              >C++, ARM Keil Studio, mbed LPC1768, MIT App Builder</span
-            >
+        <!-- Project 5: ADIS -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-eye"></i> Edge AI & Computer Vision</span>
+            <span class="job-date">Python &bull; Docker &bull; YOLOv8</span>
           </div>
-          <p class="desc">
-            Engineered embedded firmware for real-time environmental monitoring
-            and remote device control.
+          <h3 class="job-title">ADIS (Automated Drawpoint Inspection System)</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Architected a containerized computer vision pipeline for industrial drawpoint inspection, handling noisy environmental data filtering and high-resolution image preprocessing.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Programmed temperature and humidity sensors to process real-time
-              environmental data for LCD display.
+              Built a containerized edge computer vision workflow using Docker to automate sensor data ingestion and high-resolution image preprocessing.
             </li>
             <li>
-              Integrated Bluetooth communication to trigger temperature control
-              mechanisms via a custom mobile app.
+              Implemented YOLOv8 and ResNet18-based preprocessing and filtering logic to support automated feature extraction, image analysis, and data processing.
             </li>
             <li>
-              Debugged low-level hardware-software interactions to ensure
-              reliable sensor acquisition and timing.
+              Implemented robust automated preprocessing logic to handle noisy environmental data, optimizing detection throughput for resource-constrained edge deployments.
+            </li>
+            <li>
+              Collaborated in a Git-based development environment while integrating scalable machine learning and computer vision tooling (CVAT, Docker).
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>Python</span>
+            <span>Docker</span>
+            <span>YOLOv8</span>
+            <span>ResNet18</span>
+            <span>CVAT</span>
+            <span>Edge Computing</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>TRU Voting App</h3>
-            <span class="tech-stack"
-              >Java, Android Studio, Firebase, XML, Gradle</span
-            >
+        <!-- Project 6: ML-Based Cyber Security -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-network-wired"></i> Machine Learning & Systems Security</span>
+            <span class="job-date">Python &bull; TensorFlow/Keras &bull; XGBoost</span>
           </div>
-          <p class="desc">
-            Developed a cross-platform Android application for secure digital
-            voting and real-time count management.
+          <h3 class="job-title">ML-Based Cyber Security Intrusion Detection System</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Designed and optimized an end-to-end intrusion detection system balancing multiclass classification accuracy, minority-class recall, and inference resource efficiency.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Engineered XML-based user interfaces for login, registration, and
-              live voting dashboards.
+              Built an end-to-end machine learning pipeline for cyber-attack classification including preprocessing, feature engineering, and model training.
             </li>
             <li>
-              Connected the application to a Firebase cloud database for secure
-              data persistence and synchronization.
+              Designed a weighted probabilistic ensemble combining a custom deep neural network with XGBoost, boosting minority-class classification accuracy to 87.21% (5&times; improvement for Worm and Shellcode classes).
             </li>
             <li>
-              Implemented logic for vote tallying, top result display, and
-              secure input function execution.
+              Optimized runtime execution and memory efficiency to produce low-latency, exportable model artifacts (.h5, .joblib) suitable for resource-constrained embedded environments.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>Python</span>
+            <span>TensorFlow/Keras</span>
+            <span>XGBoost</span>
+            <span>Scikit-Learn</span>
+            <span>Pandas & NumPy</span>
+            <span>QuantileTransformer</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Freenove Robot Car Firmware Extension</h3>
-            <span class="tech-stack"
-              >C, mBlock, Electronics, Visual Studio</span
-            >
+        <!-- Project 7: Automated Remote Health Monitoring -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-heart-pulse"></i> Systems Architecture & Design Patterns</span>
+            <span class="job-date">Java &bull; IntelliJ &bull; MVC</span>
           </div>
-          <p class="desc">
-            Developed a reusable firmware extension that allows non-native
-            robots to be programmed using graphical blocks.
+          <h3 class="job-title">Automated Remote Health Monitoring System</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Architected a desktop monitoring platform applying modular software design patterns to simulate continuous medical telemetry ingestion and critical threshold alerting.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Mapped graphical mBlock blocks directly to underlying C-based
-              robotic implementation logic.
+              Architected a real-time event-driven monitoring system utilizing the Observer and Adapter design patterns to handle continuous streaming sensor telemetry simulation.
             </li>
             <li>
-              Integrated circuit building and electronics to support both block
-              coding and manual C programming.
+              Developed asynchronous alerting mechanisms to detect anomalous vital signs across concurrently simulated client data streams with sub-second threshold detection.
             </li>
             <li>
-              Created a centralized tool used by the engineering department for
-              robotics workshops.
+              Designed a decoupled Model-View-Controller (MVC) architecture for modular data distribution, thread safety, and seamless feature extensibility.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>Java</span>
+            <span>Design Patterns</span>
+            <span>Observer & Adapter</span>
+            <span>MVC Architecture</span>
+            <span>Telemetry Simulation</span>
+            <span>Multi-Threading</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Information System for Hospitals</h3>
-            <span class="tech-stack">C++, Visual Studio, File I/O</span>
+        <!-- Project 8: Robot Localization Research -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-compass"></i> State Estimation & Applied Mathematics</span>
+            <span class="job-date">MATLAB &bull; Numerical Methods</span>
           </div>
-          <p class="desc">
-            Implemented a C++ staff management system featuring full CRUD
-            functionality and file-based data persistence.
+          <h3 class="job-title">Robot Localization, State Estimation & SLAM Research</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Implemented and evaluated statistical state estimation filters and simultaneous mapping algorithms in simulation to achieve high-accuracy mobile robot position tracking.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Managed staff details through secure CSV file storage and
-              retrieval using advanced file I/O operations.
+              Implemented Kalman Filter (KF) and Extended Kalman Filter (EKF) algorithms in MATLAB for robot localization and multi-sensor position estimation.
             </li>
             <li>
-              Utilized OOP principles like abstraction and inheritance for
-              reusable and clean code architecture.
+              Developed and evaluated localization algorithms to estimate robot position using noisy sensor measurements and vehicle motion kinematics data.
+            </li>
+            <li>
+              Applied SLAM (Simultaneous Localization and Mapping) concepts to support autonomous robot navigation, landmark registration, and environmental mapping.
+            </li>
+            <li>
+              Used MATLAB numerical simulations to analyze algorithm behavior, convergence rates, and approaches to minimizing covariance drift.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>MATLAB</span>
+            <span>Kalman Filter (KF)</span>
+            <span>Extended Kalman Filter (EKF)</span>
+            <span>SLAM</span>
+            <span>Numerical Methods</span>
+            <span>State Estimation</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>ADIS (Automated Drawpoint Inspection System)</h3>
-            <span class="tech-stack">Python, Docker, YOLOv8n, CVAT</span>
+        <!-- Project 9: GadgetHub -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-cart-shopping"></i> Full-Stack Cloud Platform</span>
+            <span class="job-date">React &bull; Node.js &bull; AWS &bull; MongoDB</span>
           </div>
-          <p class="desc">
-            Built an automated image inspection system for industrial
-            infrastructure monitoring.
+          <h3 class="job-title">GadgetHub Cloud Commerce Architecture</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered a containerized cloud e-commerce platform incorporating secure customer authentication, atomic inventory transactions, and automated deployment pipelines.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Implemented a containerized version of the open-source image
-              labeling platform CVAT using Docker.
+              Developed a full-stack platform featuring customer authentication, product catalogs, and transactional order workflows.
             </li>
             <li>
-              Set up a YOLOv8n machine learning model as an initial filter for
-              automated image categorization.
+              Deployed containerized backend services to AWS App Runner and static frontend assets to AWS Amplify, integrating automated CI/CD pipelines via GitHub.
+            </li>
+            <li>
+              Implemented atomic transaction handling and concurrency controls to maintain strict data consistency and prevent race conditions during high-volume checkout events.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>React</span>
+            <span>Node.js / Express</span>
+            <span>AWS App Runner</span>
+            <span>AWS Amplify</span>
+            <span>MongoDB</span>
+            <span>Atomic Transactions</span>
+          </div>
         </div>
 
-        <div class="project-card wide">
-          <div class="project-header">
-            <h3>Alphabetic App</h3>
-            <span class="tech-stack"
-              >React Native, Expo Go, Firebase, VS Code</span
-            >
+        <!-- Project 10: QuizItUp -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-graduation-cap"></i> Interactive Web Application</span>
+            <span class="job-date">React &bull; TypeScript &bull; Vite &bull; Tailwind</span>
           </div>
-          <p class="desc">
-            Designed and developed a cross-platform mobile application with
-            real-time data management.
+          <h3 class="job-title">QuizItUp Educational Assessment Engine</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Engineered a responsive, state-driven educational platform featuring dynamic question rendering, progress calculation, and modular data schemas.
           </p>
-          <ul>
+          <ul class="job-bullets">
             <li>
-              Leveraged Expo Go to create a unified codebase for both Android
-              and iOS platforms.
+              Engineered a responsive educational web application featuring an interactive quiz engine with dynamic question rendering, score calculation, and state tracking.
             </li>
             <li>
-              Implemented secure user authentication and real-time backend data
-              handling via Firebase integration.
+              Designed modular, reusable UI components and structured data interfaces using React hooks and TypeScript to ensure maintainable architecture.
+            </li>
+            <li>
+              Applied component-based routing and isolated data schemas to enable seamless feature expansion across diverse educational subjects.
             </li>
           </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>State Management</span>
+            <span>Component Architecture</span>
+          </div>
+        </div>
+
+        <!-- Project 11: Met Open Access Analytics Dashboard -->
+        <div class="job-card">
+          <div class="job-meta">
+            <span class="job-company"><i class="fas fa-chart-simple"></i> Data Engineering & Visualization</span>
+            <span class="job-date">PostgreSQL &bull; Docker &bull; Express &bull; Recharts</span>
+          </div>
+          <h3 class="job-title">Met Open Access Data Analytics Dashboard</h3>
+          <p class="desc" style="margin-bottom: 1rem; color: var(--text-muted);">
+            Designed a containerized data ingestion and visualization environment capable of processing and aggregating historical cultural dataset metrics into real-time analytics.
+          </p>
+          <ul class="job-bullets">
+            <li>
+              Configured a containerized PostgreSQL database environment using Docker to efficiently bulk-ingest and manage a 500,000-row (300MB) historical dataset.
+            </li>
+            <li>
+              Developed a Node.js and Express REST API to execute complex backend SQL aggregations and serve structured JSON data to the client interface.
+            </li>
+            <li>
+              Built an interactive React frontend dashboard utilizing Recharts to dynamically visualize database metrics and translate raw query data into user-facing analytics.
+            </li>
+          </ul>
+          <div class="tag-cloud" style="margin-top: 1.25rem;">
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>Node.js / Express</span>
+            <span>React</span>
+            <span>Recharts</span>
+            <span>SQL Aggregations</span>
+          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Navigation Footer -->
+      <div style="margin-top: 3.5rem; text-align: center;">
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Main Portfolio</a>
+        <a href="experience.html" class="btn btn-primary" style="margin-left: 1rem;">View Work Experience &rarr;</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container footer-content">
+        <h2>Let's Connect</h2>
+        <p class="footer-lead">
+          Open to relocation across Canada for embedded, systems, and full-stack engineering roles.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ruthsol.work@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i> ruthsol.work@gmail.com
+          </a>
+          <a href="tel:2363132044" class="contact-item">
+            <i class="fas fa-phone"></i> 236-313-2044
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ruthbefik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            <i class="fab fa-linkedin"></i> linkedin.com/in/ruthbefik
+          </a>
+          <a
+            href="https://github.com/RuthSolomonB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            <i class="fab fa-github"></i> github.com/RuthSolomonB
+          </a>
+        </div>
+        <p class="copyright">
+          &copy; 2026 Ruth Befikadu, EIT. Built for clean performance and readability.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
